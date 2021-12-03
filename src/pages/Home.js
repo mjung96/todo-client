@@ -5,6 +5,7 @@ import { Grid, Transition } from 'semantic-ui-react';
 import ListCard from '../components/ListCard'
 import { AuthContext } from '../auth.js';
 import ListForm from '../components/ListForm'
+import DeleteButton from '../components/DeleteButton';
 
 function Home() {
     const { loading, data } = useQuery(FETCH_LISTS_QUERY)
@@ -39,6 +40,7 @@ function Home() {
                     displayCards.map(list=>(
                         <Grid.Column key={list.id} style={{marginBottom: 20}}>
                             <ListCard list={list}/>
+                            <DeleteButton listId={list.id}/>
                         </Grid.Column>
                     ))
                 )}

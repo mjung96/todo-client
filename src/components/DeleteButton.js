@@ -17,7 +17,11 @@ function DeleteButton({ listId, callback, listItemId }) {
         update(){
             //open(false);
             if(callback) callback();
-            window.location.reload(true);
+
+            if (!listItemId) {
+                window.location.reload(true);
+            }
+            // window.location.reload(true);
 
         },
         variables: {

@@ -27,7 +27,7 @@ function ListCard({
     const [submitListItem] = useMutation(SUBMIT_LISTITEM_MUTATION, {
         update() {
             setItem('');
-            window.location.reload(true);
+            //window.location.reload(true);
         },
         variables: {
             listId: id,

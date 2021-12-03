@@ -24,7 +24,7 @@ function ListForm() {
             data.getLists = [result.data.createList, ...data.getLists]
             proxy.writeQuery({ query: FETCH_LISTS_QUERY, data });
             values.title = ''
-            window.location.reload(true);
+            //window.location.reload(true);
         }
     })
 

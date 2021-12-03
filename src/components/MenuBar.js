@@ -9,7 +9,11 @@ function MenuBar() {
   const [activeItem, setActiveItem] = useState(path)
   const { user, logout } = useContext(AuthContext);
 
-  const handleItemClick = (e, { name }) => setActiveItem(name);
+  const handleItemClick = (e, { name }) => {
+    setActiveItem(name);
+    window.location.reload(true);
+  }
+    //setActiveItem(name);
 
   const menuBar = user ? (
     <Menu pointing secondary size="massive">

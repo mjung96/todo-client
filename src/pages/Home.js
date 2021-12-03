@@ -40,7 +40,7 @@ function Home() {
                     displayCards.map(list=>(
                         <Grid.Column key={list.id} style={{marginBottom: 20}}>
                             <ListCard list={list}/>
-                            <DeleteButton listId={list.id}/>
+                            {/* <DeleteButton listId={list.id}/> */}
                         </Grid.Column>
                     ))
                 )}

@@ -34,7 +34,7 @@ function Home() {
                     </Grid.Column>
                 )}
                 {loading ? (
-                    <h1>loading lists...</h1>
+                    <h1></h1>
                 ) : (
                     displayCards.map(list=>(
                         <Grid.Column key={list.id} style={{marginBottom: 20}}>

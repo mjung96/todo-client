@@ -72,8 +72,8 @@ function ListCard({
                 {/* <h5>listItems</h5> */}
                 {listItems.map(x => (
                     <>
-                    <h5>{x.description}</h5> 
-                    <DeleteButton listId={id} listItemId={x.id}/>
+                    <h5>{x.description}<DeleteButton listId={id} listItemId={x.id}/></h5> 
+                    {/* <DeleteButton listId={id} listItemId={x.id}/> */}
                     </>
                 ))}
             </Card.Content>

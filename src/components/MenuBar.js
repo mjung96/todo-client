@@ -11,7 +11,7 @@ function MenuBar() {
 
   const handleItemClick = (e, { name }) => {
     setActiveItem(name);
-    window.location.reload(true);
+    //window.location.reload(true);
   }
     //setActiveItem(name);
 

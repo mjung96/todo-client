@@ -33,7 +33,7 @@ function MenuBar() {
   ) : (
     <Menu pointing secondary size="massive">
           <Menu.Item
-            name='home'
+            name='separate'
             active={activeItem === 'home'}
             onClick={handleItemClick}
             as={Link}

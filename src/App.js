@@ -24,7 +24,7 @@ function App() {
   return (
     <AuthProvider>
       <Router> 
-        <Container style={{backgroundImage: `url(${memeback})`}}>
+        <Container >
           <MenuBar />
           <Routes>
             <Route exact path="/" element={<Home/>}/>

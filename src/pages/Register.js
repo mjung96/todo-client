@@ -76,7 +76,7 @@ function Register(props) {
     return (
         <div className="form-container">
             <Form onSubmit={onSubmit} noValidate className={loading ? 'loading' : ''}>
-                <h1 style={{color:'green'}}>why tf aren't you signed up already ??</h1>
+                <h1 style={{color:'green'}}>sign up sir pls</h1>
                 <Form.Input
                     //label="Username"
                     placeholder="your dumb new username"

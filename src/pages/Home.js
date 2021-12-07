@@ -6,6 +6,7 @@ import ListCard from '../components/ListCard'
 import { AuthContext } from '../auth.js';
 import ListForm from '../components/ListForm'
 import DeleteButton from '../components/DeleteButton';
+import memeback from '../memeback.png'
 
 function Home() {
     const { loading, data } = useQuery(FETCH_LISTS_QUERY)
@@ -27,7 +28,7 @@ function Home() {
     }
 
     return (
-        <Grid columns={3}>
+        <Grid columns={3} style={{backgroundImage: `url(${memeback})`}}>
             <Grid.Row>
                 {user && (
                     <Grid.Column>

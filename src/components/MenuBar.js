@@ -41,7 +41,7 @@ function MenuBar() {
             onClick={handleItemClick}
             as={Link}
             to="/"
-            style={{color:'yellow'}}
+            style={{color:'red'}}
           />
           <Menu.Menu position='right'>
             <Menu.Item

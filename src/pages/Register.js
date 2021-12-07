@@ -76,10 +76,10 @@ function Register(props) {
     return (
         <div className="form-container">
             <Form onSubmit={onSubmit} noValidate className={loading ? 'loading' : ''}>
-                <h1>Sign Up</h1>
+                <h1 style={{color:'green'}}>why tf aren't you signed up already ??</h1>
                 <Form.Input
                     //label="Username"
-                    placeholder="Username"
+                    placeholder="your dumb new username"
                     name="username"
                     type="text"
                     value={values.username}
@@ -88,7 +88,7 @@ function Register(props) {
                 />
                 <Form.Input
                     //label="Password"
-                    placeholder="Password"
+                    placeholder="probably 123456"
                     name="password"
                     type="password"
                     value={values.password}
@@ -97,7 +97,7 @@ function Register(props) {
                 />
                 <Form.Input
                     //label="Confirm Password"
-                    placeholder="Confirm Password"
+                    placeholder="definitey 123456"
                     name="confirmPassword"
                     type="password"
                     value={values.confirmPassword}
@@ -106,14 +106,14 @@ function Register(props) {
                 />
                 <Form.Input
                     //label="Email"
-                    placeholder="Email"
+                    placeholder="email info give me email"
                     name="email"
                     type="email"
                     value={values.email}
                     error={errors.email ? true : false}
                     onChange={onChange}
                 />
-                <Button type="submit">
+                <Button type="submit" style={{color:'green'}}>
                     Register
                 </Button>
             </Form>

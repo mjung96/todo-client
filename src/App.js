@@ -10,6 +10,7 @@ import { Container } from 'semantic-ui-react';
 import { AuthProvider } from './auth';
 import AuthRoute from './AuthRoute'
 //import { AuthContext } from './auth.js';
+import memeback from './memeback.png'
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
   return (
     <AuthProvider>
       <Router> 
-        <Container>
+        <Container style={{backgroundImage: `url(${memeback})`}}>
           <MenuBar />
           <Routes>
             <Route exact path="/" element={<Home/>}/>

@@ -39,7 +39,7 @@ function ListForm() {
     return (
         <>
           <Form onSubmit={onSubmit}>
-            <h2>Add List</h2>
+            <h2 style={{color: '#00FFFF'}}>Add List</h2>
             <Form.Field>
               <Form.Input
                 placeholder="Title"
@@ -48,7 +48,7 @@ function ListForm() {
                 value={values.title}
                 error={error ? true : false}
               />
-              <Button type="submit" style={{ marginBottom: 20 }}>
+              <Button type="submit" style={{ marginBottom: 20, color: '#00FFFF' }}>
                 Submit
               </Button>
             </Form.Field>

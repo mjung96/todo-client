@@ -22,22 +22,25 @@ function MenuBar() {
             active
             as={Link}
             to="/"
+            style={{color:'red'}}
           />
           <Menu.Menu position='right'>
             <Menu.Item
                 name='logout'
                 onClick={logout}
+                style={{color:'#BF40BF'}}
             />
           </Menu.Menu>
         </Menu>
   ) : (
     <Menu pointing secondary size="massive">
           <Menu.Item
-            name='update'
+            name='Log in to make/see lists pls or why else you here'
             active={activeItem === 'home'}
             onClick={handleItemClick}
             as={Link}
             to="/"
+            style={{color:'yellow'}}
           />
           <Menu.Menu position='right'>
             <Menu.Item
@@ -46,6 +49,7 @@ function MenuBar() {
                 onClick={handleItemClick}
                 as={Link}
                 to="/login"
+                style={{color:'orange'}}
             />
             <Menu.Item
                 name='register'
@@ -53,6 +57,7 @@ function MenuBar() {
                 onClick={handleItemClick}
                 as={Link}
                 to="/register"
+                style={{color:'pink'}}
             />
           </Menu.Menu>
         </Menu>

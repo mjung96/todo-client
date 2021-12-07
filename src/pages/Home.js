@@ -29,6 +29,7 @@ function Home() {
     return (
         <Grid columns={3}>
             <Grid.Row>
+                <h1>separate</h1>
                 {user && (
                     <Grid.Column>
                         <ListForm/>

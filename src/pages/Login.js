@@ -57,7 +57,7 @@ function Login(props) {
                 <h1 style={{color:'brown'}}>Log In</h1>
                 <Form.Input
                     //label="Username"
-                    placeholder="some dumb username"
+                    placeholder="name of user"
                     name="username"
                     type="text"
                     value={values.username}
@@ -66,7 +66,7 @@ function Login(props) {
                 />
                 <Form.Input
                     //label="Password"
-                    placeholder="and even worse password"
+                    placeholder="password of said user"
                     name="password"
                     type="password"
                     value={values.password}

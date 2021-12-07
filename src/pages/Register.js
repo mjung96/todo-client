@@ -79,7 +79,7 @@ function Register(props) {
                 <h1 style={{color:'green'}}>sign up sir pls</h1>
                 <Form.Input
                     //label="Username"
-                    placeholder="your dumb new username"
+                    placeholder="your new username"
                     name="username"
                     type="text"
                     value={values.username}

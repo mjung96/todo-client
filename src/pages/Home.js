@@ -28,8 +28,8 @@ function Home() {
     }
 
     return (
-        <Grid columns={3} style={{backgroundImage: `url(${memeback})`}}>
-            <Grid.Row>
+        <Grid columns={3} >
+            <Grid.Row style={{backgroundImage: `url(${memeback})`}}>
                 {user && (
                     <Grid.Column>
                         <ListForm/>

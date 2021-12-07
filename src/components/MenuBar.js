@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import { Menu } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../auth.js';
+import plainback from '../white.png'
 
 function MenuBar() {
   const pathname = window.location.pathname;
@@ -33,9 +34,9 @@ function MenuBar() {
           </Menu.Menu>
         </Menu>
   ) : (
-    <Menu pointing secondary size="massive">
+    <Menu pointing secondary size="massive" style={{backgroundImage: `url(${plainback})`}}>
           <Menu.Item
-            name='Log in to make/see lists pls or why else you here'
+            name='Log in pls'
             active={activeItem === 'home'}
             onClick={handleItemClick}
             as={Link}

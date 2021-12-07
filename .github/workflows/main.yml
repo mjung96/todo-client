@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: DEV
-      url: 'https://adoring-edison-a6d812.netlify.app/'
+      url: 'https://blissful-ramanujan-570bbe.netlify.app/'
     steps:
      - name: Deploy 
        run: echo I am deploying 

@@ -1,5 +1,4 @@
-todo aha 
-maybe now it works BRUH PLS
+final?
 
 # Getting Started with Create React App
 
